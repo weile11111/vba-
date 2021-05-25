@@ -416,3 +416,47 @@ Sub 宏3()
     ActiveDocument.Styles("正文").NoProofing = False
     ActiveDocument.Styles("正文").Frame.Delete
 End Sub
+Sub 宏13()
+'
+' 宏13 宏
+'
+'
+    With ActiveDocument.Styles("样式4").Font
+        .NameFarEast = "微软雅黑"
+        .NameAscii = "微软雅黑"
+        .NameOther = "微软雅黑"
+        .Name = "微软雅黑"
+        .Size = 11
+        .Bold = True
+        .Italic = True
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 0
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("样式4")
+        .AutomaticallyUpdate = False
+        .BaseStyle = "正文"
+        .NextParagraphStyle = "样式4"
+    End With
+End Sub
