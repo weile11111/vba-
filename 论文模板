@@ -1,0 +1,418 @@
+Sub lunwen()
+
+
+End Sub
+Sub 宏2()
+'
+' 宏2 宏
+'
+'
+    With ActiveDocument.Styles("纯文本").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "Times New Roman"
+        .Size = 12
+        .Bold = False
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("纯文本")
+        .AutomaticallyUpdate = True
+        .BaseStyle = "正文"
+        .NextParagraphStyle = "纯文本"
+    End With
+    ActiveDocument.Styles("纯文本").AutomaticallyUpdate = True
+    With ActiveDocument.Styles("纯文本").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "宋体"
+        .Size = 18
+        .Bold = True
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("纯文本").ParagraphFormat
+        .LeftIndent = CentimetersToPoints(0)
+        .RightIndent = CentimetersToPoints(0)
+        .SpaceBefore = 2.5
+        .SpaceBeforeAuto = False
+        .SpaceAfter = 2.5
+        .SpaceAfterAuto = False
+        .LineSpacingRule = wdLineSpaceSingle
+        .Alignment = wdAlignParagraphCenter
+        .WidowControl = True
+        .KeepWithNext = False
+        .KeepTogether = False
+        .PageBreakBefore = False
+        .NoLineNumber = False
+        .Hyphenation = True
+        .FirstLineIndent = CentimetersToPoints(0)
+        .OutlineLevel = wdOutlineLevelBodyText
+        .CharacterUnitLeftIndent = 0
+        .CharacterUnitRightIndent = 0
+        .CharacterUnitFirstLineIndent = 0
+        .LineUnitBefore = 0.5
+        .LineUnitAfter = 0.5
+        .MirrorIndents = False
+        .TextboxTightWrap = wdTightNone
+        .CollapsedByDefault = False
+        .AutoAdjustRightIndent = True
+        .DisableLineHeightGrid = False
+        .FarEastLineBreakControl = True
+        .WordWrap = True
+        .HangingPunctuation = True
+        .HalfWidthPunctuationOnTopOfLine = False
+        .AddSpaceBetweenFarEastAndAlpha = True
+        .AddSpaceBetweenFarEastAndDigit = True
+        .BaseLineAlignment = wdBaselineAlignAuto
+    End With
+    ActiveDocument.Styles("纯文本").NoSpaceBetweenParagraphsOfSameStyle = False
+    ActiveDocument.Styles("纯文本").ParagraphFormat.TabStops.ClearAll
+    With ActiveDocument.Styles("纯文本").ParagraphFormat
+        With .Shading
+            .Texture = wdTextureNone
+            .ForegroundPatternColor = wdColorAutomatic
+            .BackgroundPatternColor = wdColorWhite
+        End With
+        .Borders(wdBorderLeft).LineStyle = wdLineStyleNone
+        .Borders(wdBorderRight).LineStyle = wdLineStyleNone
+        .Borders(wdBorderTop).LineStyle = wdLineStyleNone
+        .Borders(wdBorderBottom).LineStyle = wdLineStyleNone
+        With .Borders
+            .DistanceFromTop = 1
+            .DistanceFromLeft = 4
+            .DistanceFromBottom = 1
+            .DistanceFromRight = 4
+            .Shadow = False
+        End With
+    End With
+    ActiveDocument.Styles("纯文本").LanguageID = wdEnglishUS
+    ActiveDocument.Styles("纯文本").NoProofing = False
+    ActiveDocument.Styles("纯文本").LanguageID = wdSimplifiedChinese
+    ActiveDocument.Styles("纯文本").NoProofing = False
+    ActiveDocument.Styles("纯文本").Frame.Delete
+End Sub
+Sub 宏3()
+'
+' 宏3 宏
+'
+'
+    With ActiveDocument.Styles("正文").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "Times New Roman"
+        .Size = 10.5
+        .Bold = False
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("正文")
+        .AutomaticallyUpdate = False
+        .BaseStyle = ""
+        .NextParagraphStyle = "正文"
+    End With
+    ActiveDocument.Styles("正文").AutomaticallyUpdate = False
+    With ActiveDocument.Styles("正文").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "宋体"
+        .Size = 12
+        .Bold = False
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("正文").ParagraphFormat
+        .LeftIndent = CentimetersToPoints(0)
+        .RightIndent = CentimetersToPoints(0)
+        .SpaceBefore = 0
+        .SpaceBeforeAuto = False
+        .SpaceAfter = 0
+        .SpaceAfterAuto = False
+        .LineSpacingRule = wdLineSpaceExactly
+        .LineSpacing = 20
+        .Alignment = wdAlignParagraphLeft
+        .WidowControl = True
+        .KeepWithNext = False
+        .KeepTogether = False
+        .PageBreakBefore = False
+        .NoLineNumber = False
+        .Hyphenation = True
+        .FirstLineIndent = CentimetersToPoints(0.85)
+        .OutlineLevel = wdOutlineLevelBodyText
+        .CharacterUnitLeftIndent = 0
+        .CharacterUnitRightIndent = 0
+        .CharacterUnitFirstLineIndent = 2
+        .LineUnitBefore = 0
+        .LineUnitAfter = 0
+        .MirrorIndents = False
+        .TextboxTightWrap = wdTightNone
+        .CollapsedByDefault = False
+        .AutoAdjustRightIndent = True
+        .DisableLineHeightGrid = False
+        .FarEastLineBreakControl = True
+        .WordWrap = True
+        .HangingPunctuation = True
+        .HalfWidthPunctuationOnTopOfLine = False
+        .AddSpaceBetweenFarEastAndAlpha = True
+        .AddSpaceBetweenFarEastAndDigit = True
+        .BaseLineAlignment = wdBaselineAlignAuto
+    End With
+    ActiveDocument.Styles("正文").NoSpaceBetweenParagraphsOfSameStyle = False
+    ActiveDocument.Styles("正文").ParagraphFormat.TabStops.ClearAll
+    With ActiveDocument.Styles("正文").ParagraphFormat
+        With .Shading
+            .Texture = wdTextureNone
+            .ForegroundPatternColor = wdColorAutomatic
+            .BackgroundPatternColor = wdColorWhite
+        End With
+        .Borders(wdBorderLeft).LineStyle = wdLineStyleNone
+        .Borders(wdBorderRight).LineStyle = wdLineStyleNone
+        .Borders(wdBorderTop).LineStyle = wdLineStyleNone
+        .Borders(wdBorderBottom).LineStyle = wdLineStyleNone
+        With .Borders
+            .DistanceFromTop = 1
+            .DistanceFromLeft = 4
+            .DistanceFromBottom = 1
+            .DistanceFromRight = 4
+            .Shadow = False
+        End With
+    End With
+    ActiveDocument.Styles("正文").LanguageID = wdEnglishUS
+    ActiveDocument.Styles("正文").NoProofing = False
+    ActiveDocument.Styles("正文").LanguageID = wdSimplifiedChinese
+    ActiveDocument.Styles("正文").NoProofing = False
+    ActiveDocument.Styles("正文").Frame.Delete
+    With ActiveDocument.Styles("正文").ParagraphFormat
+        .LeftIndent = CentimetersToPoints(0)
+        .RightIndent = CentimetersToPoints(0)
+        .SpaceBefore = 0
+        .SpaceBeforeAuto = False
+        .SpaceAfter = 0
+        .SpaceAfterAuto = False
+        .LineSpacingRule = wdLineSpaceExactly
+        .LineSpacing = 20
+        .Alignment = wdAlignParagraphJustify
+        .WidowControl = True
+        .KeepWithNext = False
+        .KeepTogether = False
+        .PageBreakBefore = False
+        .NoLineNumber = False
+        .Hyphenation = True
+        .FirstLineIndent = CentimetersToPoints(0.85)
+        .OutlineLevel = wdOutlineLevelBodyText
+        .CharacterUnitLeftIndent = 0
+        .CharacterUnitRightIndent = 0
+        .CharacterUnitFirstLineIndent = 2
+        .LineUnitBefore = 0
+        .LineUnitAfter = 0
+        .MirrorIndents = False
+        .TextboxTightWrap = wdTightNone
+        .CollapsedByDefault = False
+        .AutoAdjustRightIndent = True
+        .DisableLineHeightGrid = False
+        .FarEastLineBreakControl = True
+        .WordWrap = True
+        .HangingPunctuation = True
+        .HalfWidthPunctuationOnTopOfLine = False
+        .AddSpaceBetweenFarEastAndAlpha = True
+        .AddSpaceBetweenFarEastAndDigit = True
+        .BaseLineAlignment = wdBaselineAlignAuto
+    End With
+    ActiveDocument.Styles("正文").NoSpaceBetweenParagraphsOfSameStyle = False
+    With ActiveDocument.Styles("正文")
+        .AutomaticallyUpdate = False
+        .BaseStyle = ""
+        .NextParagraphStyle = "正文"
+    End With
+    ActiveDocument.Styles("正文").AutomaticallyUpdate = False
+    With ActiveDocument.Styles("正文").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "宋体"
+        .Size = 12
+        .Bold = False
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("正文").ParagraphFormat
+        .LeftIndent = CentimetersToPoints(0)
+        .RightIndent = CentimetersToPoints(0)
+        .SpaceBefore = 0
+        .SpaceBeforeAuto = False
+        .SpaceAfter = 0
+        .SpaceAfterAuto = False
+        .LineSpacingRule = wdLineSpaceExactly
+        .LineSpacing = 20
+        .Alignment = wdAlignParagraphJustify
+        .WidowControl = True
+        .KeepWithNext = False
+        .KeepTogether = False
+        .PageBreakBefore = False
+        .NoLineNumber = False
+        .Hyphenation = True
+        .FirstLineIndent = CentimetersToPoints(0.85)
+        .OutlineLevel = wdOutlineLevelBodyText
+        .CharacterUnitLeftIndent = 0
+        .CharacterUnitRightIndent = 0
+        .CharacterUnitFirstLineIndent = 2
+        .LineUnitBefore = 0
+        .LineUnitAfter = 0
+        .MirrorIndents = False
+        .TextboxTightWrap = wdTightNone
+        .CollapsedByDefault = False
+        .AutoAdjustRightIndent = True
+        .DisableLineHeightGrid = False
+        .FarEastLineBreakControl = True
+        .WordWrap = True
+        .HangingPunctuation = True
+        .HalfWidthPunctuationOnTopOfLine = False
+        .AddSpaceBetweenFarEastAndAlpha = True
+        .AddSpaceBetweenFarEastAndDigit = True
+        .BaseLineAlignment = wdBaselineAlignAuto
+    End With
+    ActiveDocument.Styles("正文").NoSpaceBetweenParagraphsOfSameStyle = False
+    ActiveDocument.Styles("正文").ParagraphFormat.TabStops.ClearAll
+    With ActiveDocument.Styles("正文").ParagraphFormat
+        With .Shading
+            .Texture = wdTextureNone
+            .ForegroundPatternColor = wdColorAutomatic
+            .BackgroundPatternColor = wdColorWhite
+        End With
+        .Borders(wdBorderLeft).LineStyle = wdLineStyleNone
+        .Borders(wdBorderRight).LineStyle = wdLineStyleNone
+        .Borders(wdBorderTop).LineStyle = wdLineStyleNone
+        .Borders(wdBorderBottom).LineStyle = wdLineStyleNone
+        With .Borders
+            .DistanceFromTop = 1
+            .DistanceFromLeft = 4
+            .DistanceFromBottom = 1
+            .DistanceFromRight = 4
+            .Shadow = False
+        End With
+    End With
+    ActiveDocument.Styles("正文").LanguageID = wdSimplifiedChinese
+    ActiveDocument.Styles("正文").NoProofing = False
+    ActiveDocument.Styles("正文").LanguageID = wdSimplifiedChinese
+    ActiveDocument.Styles("正文").NoProofing = False
+    ActiveDocument.Styles("正文").Frame.Delete
+End Sub
