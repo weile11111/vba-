@@ -114,6 +114,44 @@ Sub 宏2()
         .AddSpaceBetweenFarEastAndDigit = True
         .BaseLineAlignment = wdBaselineAlignAuto
     End With
+    With ActiveDocument.Styles("标题 2").Font
+        .NameFarEast = "宋体"
+        .NameAscii = "Times New Roman"
+        .NameOther = "Times New Roman"
+        .Name = "Times New Roman"
+        .Size = 15
+        .Bold = True
+        .Italic = False
+        .Underline = wdUnderlineNone
+        .UnderlineColor = wdColorAutomatic
+        .StrikeThrough = False
+        .DoubleStrikeThrough = False
+        .Outline = False
+        .Emboss = False
+        .Shadow = False
+        .Hidden = False
+        .SmallCaps = False
+        .AllCaps = False
+        .Color = wdColorAutomatic
+        .Engrave = False
+        .Superscript = False
+        .Subscript = False
+        .Scaling = 100
+        .Kerning = 1
+        .Animation = wdAnimationNone
+        .DisableCharacterSpaceGrid = False
+        .EmphasisMark = wdEmphasisMarkNone
+        .Ligatures = wdLigaturesNone
+        .NumberSpacing = wdNumberSpacingDefault
+        .NumberForm = wdNumberFormDefault
+        .StylisticSet = wdStylisticSetDefault
+        .ContextualAlternates = 0
+    End With
+    With ActiveDocument.Styles("标题 2")
+        .AutomaticallyUpdate = False
+        .BaseStyle = "正文"
+        .NextParagraphStyle = "正文"
+    End With
     ActiveDocument.Styles("纯文本").NoSpaceBetweenParagraphsOfSameStyle = False
     ActiveDocument.Styles("纯文本").ParagraphFormat.TabStops.ClearAll
     With ActiveDocument.Styles("纯文本").ParagraphFormat
